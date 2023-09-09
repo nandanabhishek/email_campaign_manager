@@ -53,7 +53,55 @@ Follow these steps to run the Email Campaign Manager locally:
 
    f. Access the application in your web browser at http://localhost:8000.
 
-   
+## Usage
 
-   
+### Admin Panel
+
+- Access the admin panel at [http://localhost:8000/admin/](http://localhost:8000/admin/) and log in with the superuser credentials.
+
+### Subscriber Management
+
+#### Add Subscribers
+
+To add subscribers, follow these steps:
+
+1. Access the "Add Subscribers" page at [http://localhost:8000/email_campaign/add_subscriber/](http://localhost:8000/email_campaign/add_subscriber/).
+
+2. Fill in the subscriber's information, including their email address and first name.
+
+3. Click the "Save" button to add the subscriber.
+
+#### View Subscriber List
+
+To view the list of subscribers, follow these steps:
+
+1. Access the "Subscriber List" page at [http://localhost:8000/email_campaign/subscriber_list/](http://localhost:8000/email_campaign/subscriber_list/).
+
+2. You'll see a list of all subscribers, including their email addresses and first names.
+
+### Campaign Management
+
+#### Add Campaigns
+
+To create and schedule email campaigns, follow these steps:
+
+1. Access the "Add Campaign" page at [http://localhost:8000/email_campaign/add_campaign/](http://localhost:8000/email_campaign/add_campaign/).
+
+2. Fill in the campaign details, including:
+   - Subject: Enter the subject of the email campaign.
+   - Preview Text: Add a preview text for your email.
+   - Article URL: Provide the URL of the article related to the campaign.
+   - HTML Content: Enter the HTML content of your email.
+   - Plain Text Content: Optionally, add plain text content for email clients that do not support HTML.
+   - Published Date: Set the date when you want the campaign to be sent.
+
+3. Click the "Save" button to create the campaign.
+
+#### View Campaign List
+
+To view the list of campaigns, follow these steps:
+
+1. Access the "Campaign List" page at [http://localhost:8000/email_campaign/campaign_list/](http://localhost:8000/email_campaign/campaign_list/).
+
+2. You'll see a list of all campaigns, including their subjects, preview text, article URLs, and published dates.
 
