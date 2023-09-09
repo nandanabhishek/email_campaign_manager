@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Campaign List</title>
+</head>
+<body>
+    <h1>Campaign List</h1>
+    <table border="1">
+        <tr>
+            <th>Subject</th>
+            <th>Preview Text</th>
+            <th>Article URL</th>
+            <th>Published Date</th>
+        </tr>
+        {% for campaign in campaigns %}
+        <tr>
+            <td>{{ campaign.subject }}</td>
+            <td>{{ campaign.preview_text }}</td>
+            <td><a href="{{ campaign.article_url }}" target="_blank">{{ campaign.article_url }}</a></td>
+            <td>{{ campaign.published_date }}</td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="4">No campaigns available.</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
