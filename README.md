@@ -105,3 +105,35 @@ To view the list of campaigns, follow these steps:
 
 2. You'll see a list of all campaigns, including their subjects, preview text, article URLs, and published dates.
 
+## Project Structure
+
+The project is organized with the following structure:
+
+- `email_campaign/` - Django app containing models, views, and templates.
+- `templates/` - HTML templates for the app's views.
+- `static/` - Static files (CSS, JavaScript, images).
+- `manage.py` - Django management script.
+
+## URLs
+
+Here are the main URLs and their descriptions for the Email Campaign Manager:
+
+- **Admin Panel**: Access the admin panel to manage subscribers and campaigns.
+   - URL: [http://localhost:8000/admin/](http://localhost:8000/admin/)
+   - Use your superuser credentials to log in.
+
+- **Subscriber Management**:
+   - **Add Subscribers**: Add new subscribers to your email list.
+     - URL: [http://localhost:8000/email_campaign/add_subscriber/](http://localhost:8000/email_campaign/add_subscriber/)
+   - **View Subscriber List**: See a list of all subscribers.
+     - URL: [http://localhost:8000/email_campaign/subscriber_list/](http://localhost:8000/email_campaign/subscriber_list/)
+
+- **Campaign Management**:
+   - **Add Campaigns**: Create and schedule email campaigns.
+     - URL: [http://localhost:8000/email_campaign/add_campaign/](http://localhost:8000/email_campaign/add_campaign/)
+   - **View Campaign List**: See a list of all created campaigns.
+     - URL: [http://localhost:8000/email_campaign/campaign_list/](http://localhost:8000/email_campaign/campaign_list/)
+
+
+
+
