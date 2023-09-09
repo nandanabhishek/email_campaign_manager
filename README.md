@@ -31,5 +31,10 @@ Follow these steps to run the Email Campaign Manager locally:
    myvenv\Scripts\activate
    ```
 
+   b. Install project dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
    
 
