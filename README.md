@@ -51,6 +51,8 @@ Follow these steps to run the Email Campaign Manager locally:
    python manage.py runserver
    ```
 
+   f. Access the application in your web browser at http://localhost:8000.
+
    
 
    
