@@ -133,7 +133,3 @@ Here are the main URLs and their descriptions for the Email Campaign Manager:
      - URL: [http://localhost:8000/email_campaign/add_campaign/](http://localhost:8000/email_campaign/add_campaign/)
    - **View Campaign List**: See a list of all created campaigns.
      - URL: [http://localhost:8000/email_campaign/campaign_list/](http://localhost:8000/email_campaign/campaign_list/)
-
-
-
-
