@@ -36,5 +36,22 @@ Follow these steps to run the Email Campaign Manager locally:
    pip install -r requirements.txt
    ```
 
+   c. Apply database migrations:
+   ```bash
+   python manage.py migrate
+   ```
+
+   d. Create a superuser for admin access:
+   ```bash
+   python manage.py createsuperuser
+   ```
+
+   e. Start the development server:
+   ```bash
+   python manage.py runserver
+   ```
+
+   
+
    
 
