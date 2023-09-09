@@ -11,8 +11,6 @@ Email Campaign Manager is a web application built with Django that allows you to
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [URLs](#urls)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
