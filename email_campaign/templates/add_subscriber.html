@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Subscriber</title>
+</head>
+<body>
+    <h1>Add Subscriber</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+        <br>
+        <input type="submit" value="Add Subscriber">
+    </form>
+    <br>
+    <a href="{% url 'subscriber_list' %}">View Subscribers</a>
+</body>
+</html>

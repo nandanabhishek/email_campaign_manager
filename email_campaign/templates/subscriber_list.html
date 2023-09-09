@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subscriber List</title>
+</head>
+<body>
+    <h1>Subscriber List</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>First Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for subscriber in subscribers %}
+                <tr>
+                    <td>{{ subscriber.email }}</td>
+                    <td>{{ subscriber.first_name }}</td>
+                </tr>
+            {% empty %}
+                <tr>
+                    <td colspan="2">No subscribers found.</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <a href="{% url 'add_subscriber' %}">Add Subscriber</a>
+</body>
+</html>

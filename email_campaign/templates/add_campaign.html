@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Campaign</title>
+</head>
+<body>
+    <h1>Add Campaign</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+        <br>
+        <label for="preview_text">Preview Text:</label>
+        <input type="text" id="preview_text" name="preview_text" required>
+        <br>
+        <label for="article_url">Article URL:</label>
+        <input type="url" id="article_url" name="article_url" required>
+        <br>
+        <label for="html_content">HTML Content:</label>
+        <textarea id="html_content" name="html_content" rows="4" required></textarea>
+        <br>
+        <label for="plain_text_content">Plain Text Content:</label>
+        <textarea id="plain_text_content" name="plain_text_content" rows="4" required></textarea>
+        <br>
+        <label for="published_date">Published Date:</label>
+        <input type="datetime-local" id="published_date" name="published_date" required>
+        <br>
+        <input type="submit" value="Add Campaign">
+    </form>
+    <br>
+    <a href="{% url 'subscriber_list' %}">View Subscribers</a>
+</body>
+</html>

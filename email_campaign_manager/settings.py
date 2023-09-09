@@ -27,6 +27,15 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# SMTP Email Configuration
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'             # Replace with your SMTP server address
+EMAIL_PORT = 587                         # SMTP server port (587 for TLS, 465 for SSL)
+EMAIL_USE_TLS = True                     # Use TLS (True/False)
+EMAIL_USE_SSL = False                    # Use SSL (True/False)
+EMAIL_HOST_USER = 'imabhisheknandan00@gmail.com'  # Your email address
+EMAIL_HOST_PASSWORD = 'rndezjpadzqnkaht'    # Your email password or application-specific password
+
 
 # Application definition
 
@@ -37,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'email_campaign',
 ]
 
 MIDDLEWARE = [
