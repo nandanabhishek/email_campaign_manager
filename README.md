@@ -21,6 +21,9 @@ Follow these steps to run the Email Campaign Manager locally:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/email-campaign-manager.git
+   git clone https://github.com/nandanabhishek/email-campaign-manager.git
    cd email-campaign-manager
+
+   a. Create a virtual environment and activate it:
+   
 
