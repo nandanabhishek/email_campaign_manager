@@ -1,5 +1,5 @@
 import datetime
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 
 # Create your views here. 
 from .models import Subscriber, Campaign
@@ -9,7 +9,7 @@ def campaign_list(request):
     return render(request, 'campaign_list.html', {'campaigns': campaigns})
 
 def subscriber_list(request):
-    subscribers = Subscriber.objects.all()
+    subscribers = Subscriber.objects.filter(is_subscribed=True)
     return render(request, 'subscriber_list.html', {'subscribers': subscribers})
 
 def add_subscriber(request):
@@ -20,6 +20,12 @@ def add_subscriber(request):
         subscriber.save()
         return redirect('subscriber_list')  # Redirect to subscriber list view
     return render(request, 'add_subscriber.html')
+
+def unsubscribe(request, subscriber_id):
+    subscriber = get_object_or_404(Subscriber, pk=subscriber_id)
+    subscriber.is_subscribed = False
+    subscriber.save()
+    return redirect('subscriber_list')  # Redirect to the subscriber list view or another appropriate URL
 
 def add_campaign(request):
     if request.method == 'POST':
